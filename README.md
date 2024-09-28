@@ -47,10 +47,7 @@ I've only tested my setup on Fedora Silverblue 40 with NetworkManager.
     ```
     ./easyroam_cert.sh
     ```
-4. If you want to delete the generated config remove _/etc/NetworkManager/system-connections/easyroam.nmconnection_ or run:
-    ```
-    nmcli connection delete easyroam
-    ```
+4. **Save** your _Identity_!
 5. Download the **NetworkManager** script:
    ```
    curl -o easyroam_nm.sh https://raw.githubusercontent.com/C-3PK/easyroam-linux/main/easyroam_nm.sh
@@ -59,8 +56,13 @@ I've only tested my setup on Fedora Silverblue 40 with NetworkManager.
    ```
     chmod +x easyroam_nm.sh
     ```
-3. Run setup (**OUTSIDE** toolbox-container):
+7. Run setup (**OUTSIDE** toolbox-container):
     ```
     ./easyroam_nm.sh
     ```
+8. If you want to delete the generated config remove _/etc/NetworkManager/system-connections/easyroam.nmconnection_ or run:
+    ```
+    nmcli connection delete easyroam
+    ```
+
 [Original Apache 2.0 Licence](https://github.com/jahtz/easyroam-linux/blob/main/LICENSE)
